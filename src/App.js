@@ -53,7 +53,10 @@ function Gridsection(){
   I'm adept in PyTorch, Pandas, and Matplotlib for ML and data-science and  used HTML, JavaScript, and React for web-development (this website is programmed with react). Eager to innovate, my career aspirations spans Artificial Intelligence, IOT, Software and Financial Engineering among others.🖥️🌐
 
 
-  Check out my GitHub & LinkedIn profiles for more information about my journey, feel free to connect or send me an email (attached on my Resume) for any questions or queries! 
+  Discover more about my journey on my GitHub & LinkedIn profiles! Please don't hesitate to connect or drop me an email (found in my resume) for any questions, inquiries, or general advice. 🌟📧🔗
+
+
+
 
     </section >
     <section style={{display: 'flex',justifyContent: 'flex-start'}}>
