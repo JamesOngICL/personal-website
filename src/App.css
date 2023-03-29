@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #141619;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,11 +28,61 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  /* position: absolute; */
+  /* margin-top:calc(windows.height/2) */
+  /* background-color: rgb(69, 126, 247); */
 }
+
+.left-grid {
+  flex-basis: 28%;
+  background-color: rgba(245, 245, 220,0.911);
+  padding: calc(var(--padding-percentage, 1%));
+  height:calc(var(--heigh-percentage,100%));
+}
+
+.right-grid {
+  flex-grow: 1;
+  background-color: rgb(69, 126, 247,0.911);
+  padding: calc(var(--padding-percentage, 1.5%));
+
+}
+
+
+
+.myButton {
+  background-color: rgba(246, 16, 8, 0.911);
+  border: none;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 20px 10px 10px 0px;
+  border-radius: 12px;
+}
+
+.anchorval{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8.5px 16px;
+    text-decoration: none;
+}
+
+/* .li {
+  display: inline;
+  width: 60px;
+} */
