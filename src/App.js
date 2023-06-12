@@ -48,13 +48,12 @@ function Gridsection(){
     <h1 style={{color: "white", textAlign:'left'}}>James Ong</h1>
 
   <section style={{color: "white", fontSize:15, justifyContent:'left', textAlign: 'left' }}>
-  Hey, I'm James! 🚀 An Electronic Information Engineering grad from Imperial College London, now mastering in {gradcourse} at {graduni}. With 3+ years of coding experience, I've honed my skills in C++, Python, and SQL having completed many embedded systems and robotics projects. 
+  Hey, I'm James! 🚀 An Electronic Information Engineering undergraduate at Imperial College London, and will be pursuing a masters degree in {gradcourse} at {graduni}. With 3+ years of coding experience, I've honed my skills in C++, Python, and SQL having completed many embedded systems and robotics projects. 
 
   I'm adept in PyTorch, Pandas, and Matplotlib for ML and data-science and  used HTML, JavaScript, and React for web-development (this website is programmed with react). Eager to innovate, my career aspirations spans Artificial Intelligence, IOT, Software and Financial Engineering among others.🖥️🌐
 
 
   Discover more about my journey on my GitHub & LinkedIn profiles! Please don't hesitate to connect or drop me an email (found in my resume) for any questions, inquiries, or general advice. 🌟📧🔗
-
 
 
 
