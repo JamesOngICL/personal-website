@@ -7,6 +7,8 @@ import unityrover from './unity-rover.mp4'
 import mktvid from './marketingvid.mp4'
 import eploss from './adamepvsloss.png'
 import NarrowGrid from './narrowGrid';
+import thumbnailrover from './thumbnailrover.jpg';
+import occonn from './occonnectsample.jpg';
 
 import { If, Then, Else } from 'react-if';
 
@@ -24,7 +26,7 @@ function App() {
       <hr className="invisible-line" />
 
     <div id="wrapper">
-    <If condition ={width<500}>
+    <If condition ={width<600}>
       <Then>
         <NarrowGrid></NarrowGrid>
       </Then>
@@ -33,7 +35,7 @@ function App() {
       <div className="container" id="home">
 
         <div className="left-grid">
-          <img src={websitepic} className="App-logo" alt="logo" /> 
+          <img src={websitepic} style={{height:"300vm", width:"250vm"}} className="App-logo" alt="logo" /> 
 
         </div>
         {/*This is where the right grid of the website is actually laid out */}
@@ -95,11 +97,11 @@ function NewProjectGrid(){
 
   return (
   <>
-  <If condition ={width<500}>
+  <If condition ={width<600}>
       <Then>
       {/* <video src={unityrover} width="160vw" height="190vw" controls/>  */}
       <hr></hr>
-      <video src={unityrover} width="200vw" height="200vw" controls/>
+      <video src={unityrover} width="200vw" height="200vw" controls poster={thumbnailrover}/>
       <h3 style={{color: "black", textAlign:'centre'}}>Unity Mars Rover</h3>
 
       <section style={{color: "black", fontSize:12, justifyContent:'left', textAlign: 'left'}}>
@@ -125,7 +127,7 @@ function NewProjectGrid(){
         <div className="container">
             <div className="left-grid" style={{padding:0}} >
 
-            <video src={unityrover} width="275px" height="280px" controls/>
+            <video src={unityrover} width="250vm" height="200vm" controls  poster={thumbnailrover}/>
             </div>
  
             <div className="right-grid" style={{backgroundColor: 'rgba(245, 245, 220,0.911)', padding:'0 calc(var(--padding-percentage, 1.5%))'}}>
@@ -211,10 +213,10 @@ function NewEmbeddedProject(){
   <>
 
 
-    <If condition ={width<500}>
+    <If condition ={width<600}>
       <Then>
       <hr></hr>
-      <video src={mktvid} width="230vw" height="260vw" controls/>
+      <video src={mktvid} width="230vw" height="260vw" poster={occonn} controls/>
       <h3 style={{color: "black", textAlign:'centre'}}>Opencare IOT-Smart Mask</h3>
         <section style={{color:"black", fontSize:12, justifyContent:'left', textAlign: 'left'}}>
           {embtext}
@@ -235,7 +237,7 @@ function NewEmbeddedProject(){
       <div className="container">
         <div className="left-grid" style={{padding:0}} >
 
-        <video src={mktvid} width="275px" height="280px" controls/> 
+        <video src={mktvid} width="250vm" height="250vm" poster={occonn} controls/> 
         </div>
         <div className="right-grid" style={{backgroundColor: 'rgba(245, 245, 220,0.911)', padding:'0 calc(var(--padding-percentage, 1.5%))'}}>
           <h2 style={{color: "black", textAlign:'left',marginTop:'30px'}}>Opencare IOT-Smart Mask</h2>
@@ -322,7 +324,7 @@ function NewMLProject(){
   return (
   <>
 
-  <If condition ={width<500}>
+  <If condition ={width<600}>
       <Then>
         <hr></hr>
       <img src={eploss} width="250vw" height="250vw" controls/> 
@@ -350,7 +352,7 @@ function NewMLProject(){
       <div className="container">
       <div className="left-grid" style={{padding:0}} >
 
-      <img src={eploss} width="275px" height="280px" controls/> 
+      <img src={eploss} width="250vm" height="250vm" controls/> 
       </div>
       <div className="right-grid" style={{backgroundColor: 'rgba(245, 245, 220,0.911)', padding:'0 calc(var(--padding-percentage, 1.5%))'}}>
         <h2 style={{color: "black", textAlign:'left',marginTop:'30px'}}>Neural Network Coursework</h2>

@@ -46,7 +46,7 @@
 }
 
 .left-grid {
-  flex-basis: 28%;
+  flex-basis: 40%;
   background-color: rgba(245, 245, 220,0.911);
   padding: calc(var(--padding-percentage, 1%));
   height:calc(var(--heigh-percentage,100%));
