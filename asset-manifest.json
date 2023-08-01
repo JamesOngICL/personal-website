@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.7d8eb7b6.css",
-    "main.js": "/personal-website/static/js/main.6ba1021d.js",
+    "main.css": "/personal-website/static/css/main.55aeb12c.css",
+    "main.js": "/personal-website/static/js/main.62505824.js",
     "static/js/787.023edb23.chunk.js": "/personal-website/static/js/787.023edb23.chunk.js",
     "static/media/marketingvid.mp4": "/personal-website/static/media/marketingvid.db516115a06fc4e4674a.mp4",
     "static/media/unity-rover.mp4": "/personal-website/static/media/unity-rover.00cdc1850ac6c2e78097.mp4",
+    "static/media/square-profile.jpg": "/personal-website/static/media/square-profile.a3fb7d6cc6572e5e680b.jpg",
     "static/media/self-picture.JPG": "/personal-website/static/media/self-picture.95dbe2f4d16b60534797.JPG",
     "static/media/adamepvsloss.png": "/personal-website/static/media/adamepvsloss.ad5288c719ac4be8e06b.png",
     "static/media/logo.svg": "/personal-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/personal-website/index.html",
-    "main.7d8eb7b6.css.map": "/personal-website/static/css/main.7d8eb7b6.css.map",
-    "main.6ba1021d.js.map": "/personal-website/static/js/main.6ba1021d.js.map",
+    "main.55aeb12c.css.map": "/personal-website/static/css/main.55aeb12c.css.map",
+    "main.62505824.js.map": "/personal-website/static/js/main.62505824.js.map",
     "787.023edb23.chunk.js.map": "/personal-website/static/js/787.023edb23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d8eb7b6.css",
-    "static/js/main.6ba1021d.js"
+    "static/css/main.55aeb12c.css",
+    "static/js/main.62505824.js"
   ]
 }
