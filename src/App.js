@@ -6,33 +6,55 @@ import websitepic from './self-picture.JPG'
 import unityrover from './unity-rover.mp4'
 import mktvid from './marketingvid.mp4'
 import eploss from './adamepvsloss.png'
+import NarrowGrid from './narrowGrid';
 
 import { If, Then, Else } from 'react-if';
 
 
 function App() {
+  var width = window.innerWidth;
 
   return (
     <div className="App">
       <ul style={{listStyleType: "none",display:"block",margin:"0",padding:"0",position:'fixed', top: "0",border: "1px solid #e7e7e7",backgroundColor:"navy"}}>
-        <li style={{float: "left"}}><a href="#home" className='anchorval'>Home</a></li>
+        <li style={{float: "left"}}><a href="#wrapper" className='anchorval'>Home</a></li>
         <li style={{float: "left"}}><a href="#projects" className='anchorval'>Projects</a></li>
-        <li style={{float: "left"}}><a href="https://tinyurl.com/4bsj89hs" className='anchorval' target='_blank'>Resume</a></li>
+        <li style={{float: "left"}}><a href="https://tinyurl.com/3xkxp3my" className='anchorval' target='_blank'>Resume</a></li>
       </ul>
+      <hr className="invisible-line" />
 
-    <div className="container" id="home">
-    <div className="left-grid">
-      <img src={websitepic} className="App-logo" alt="logo" /> 
+    <div id="wrapper">
+    <If condition ={width<500}>
+      <Then>
+        <NarrowGrid></NarrowGrid>
+      </Then>
 
+      <Else>
+      <div className="container" id="home">
+
+        <div className="left-grid">
+          <img src={websitepic} className="App-logo" alt="logo" /> 
+
+        </div>
+        {/*This is where the right grid of the website is actually laid out */}
+        <Gridsection></Gridsection>
+        </div>
+
+
+      </Else>
+    </If> 
     </div>
-    <Gridsection></Gridsection>
-  </div>
-    <h1 id="projects" style={{textAlign:'left', color:"navy"}}>
-      Featured Projects
-    </h1>
-    <ProjectGrid></ProjectGrid>
-    <EmbeddedProject></EmbeddedProject>
-    <MLProject></MLProject>
+    <div style={{backgroundColor:
+      'navy', textAlign:'centre'}}>
+
+        <h2 id="projects" style={{color:"white"}}>
+              Featured Projects
+        </h2>
+    </div>
+
+    <NewProjectGrid></NewProjectGrid>
+    <NewEmbeddedProject></NewEmbeddedProject>
+    <NewMLProject></NewMLProject>
 
 
     </div>
@@ -48,13 +70,9 @@ function Gridsection(){
     <h1 style={{color: "white", textAlign:'left'}}>James Ong</h1>
 
   <section style={{color: "white", fontSize:15, justifyContent:'left', textAlign: 'left' }}>
-  Hey, I'm James! 🚀 An Electronic Information Engineering undergraduate at Imperial College London, and will be pursuing a masters degree in {gradcourse} at {graduni}. With 3+ years of coding experience, I've honed my skills in C++, Python, and SQL having completed many embedded systems and robotics projects. 
-
+  Hey, I'm James! 🚀 An Electronic and Information Engineering graduate from Imperial College London, currently pursuing a masters degree in {gradcourse} at {graduni}. With 3+ years of coding experience, I've honed my skills in C++, Python, and SQL having completed many embedded systems and robotics projects. 
   I'm adept in PyTorch, Pandas, and Matplotlib for ML and data-science and  used HTML, JavaScript, and React for web-development (this website is programmed with react). Eager to innovate, my career aspirations spans Artificial Intelligence, IOT, Software and Financial Engineering among others.🖥️🌐
-
-
   Discover more about my journey on my GitHub & LinkedIn profiles! Please don't hesitate to connect or drop me an email (found in my resume) for any questions, inquiries, or general advice. 🌟📧🔗
-
 
 
     </section >
@@ -62,7 +80,7 @@ function Gridsection(){
         <a href="https://github.com/JamesOngICL" target='_blank' className='myButton' >
             Github
           </a>
-          <a href='https://tinyurl.com/4hj597d7' target='_blank' className='myButton'>
+          <a href='https://www.linkedin.com/in/jamesongicl' target='_blank' className='myButton'>
             Linkedin
           </a>
   </section>
@@ -72,101 +90,303 @@ function Gridsection(){
 
 }
 
-
-function ProjectGrid(){
+function NewProjectGrid(){
   var width = window.innerWidth;
 
   return (
   <>
-
-  <div className="container">
-  <div className="left-grid" style={{padding:0}} >
   <If condition ={width<500}>
       <Then>
-      <video src={unityrover} width="160vw" height="190vw" controls/> 
+      {/* <video src={unityrover} width="160vw" height="190vw" controls/>  */}
+      <hr></hr>
+      <video src={unityrover} width="200vw" height="200vw" controls/>
+      <h3 style={{color: "black", textAlign:'centre'}}>Unity Mars Rover</h3>
 
+      <section style={{color: "black", fontSize:12, justifyContent:'left', textAlign: 'left'}}>
+        {rovertext}
+
+
+        </section >
+        <section style={{display: 'flex',justifyContent: 'flex-start'}}>
+
+          <a href={rovergit} target='_blank' className='myButton' >
+                Unity Rover Github
+          </a>
+          
+          <a href={roverreport} target='_blank' className='myButton' >
+              Rover Report
+          </a>
+          
+
+      </section>
 
       </Then>
-      <Else>
-      <video src={unityrover} width="275px" height="280px" controls/> 
+      <Else>  
+        <div className="container">
+            <div className="left-grid" style={{padding:0}} >
 
-      </Else>
-    </If>  </div>
-  <div className="right-grid" style={{backgroundColor: 'rgba(245, 245, 220,0.911)', padding:'0 calc(var(--padding-percentage, 1.5%))'}}>
+            <video src={unityrover} width="275px" height="280px" controls/>
+            </div>
+ 
+            <div className="right-grid" style={{backgroundColor: 'rgba(245, 245, 220,0.911)', padding:'0 calc(var(--padding-percentage, 1.5%))'}}>
     
-    <h2 style={{color: "black", textAlign:'left',marginTop:'10px'}}>Unity Mars Rover</h2>
-  <section style={{color: "black", fontSize:15, justifyContent:'left', textAlign: 'left'}}>
-    {rovertext}
+              <h2 style={{color: "black", textAlign:'left',marginTop:'10px'}}>Unity Mars Rover</h2>
+            <section style={{color: "black", fontSize:15, justifyContent:'left', textAlign: 'left'}}>
+              {rovertext}
 
 
-    </section >
-    <section style={{display: 'flex',justifyContent: 'flex-start'}}>
+              </section >
+              <section style={{display: 'flex',justifyContent: 'flex-start'}}>
 
-      <a href={rovergit} target='_blank' className='myButton' >
-            Unity Rover Github
-      </a>
-      
-      <a href={roverreport} target='_blank' className='myButton' >
-           Rover Report
-      </a>
-      
+                <a href={rovergit} target='_blank' className='myButton' >
+                      Unity Rover Github
+                </a>
+                
+                <a href={roverreport} target='_blank' className='myButton' >
+                    Rover Report
+                </a>
+                
 
-  </section>
-  </div>
+            </section>
 
-</div>
+          </div>
+
+        </div>
+      </Else>
+    </If>  
 </>
 );
 
 }
 
+// function ProjectGrid(){
+//   var width = window.innerWidth;
 
-function EmbeddedProject(){
+//   return (
+//   <>
+//   <div className="container">
+//   <div className="left-grid" style={{padding:0}} >
+//   <If condition ={width<500}>
+//       <Then>
+//       <video src={unityrover} width="160vw" height="190vw" controls/> 
+
+
+//       </Then>
+//       <Else>
+//       <video src={unityrover} width="275px" height="280px" controls/> 
+
+//       </Else>
+//     </If>  </div>
+//   <div className="right-grid" style={{backgroundColor: 'rgba(245, 245, 220,0.911)', padding:'0 calc(var(--padding-percentage, 1.5%))'}}>
+    
+//     <h2 style={{color: "black", textAlign:'left',marginTop:'10px'}}>Unity Mars Rover</h2>
+//   <section style={{color: "black", fontSize:15, justifyContent:'left', textAlign: 'left'}}>
+//     {rovertext}
+
+
+//     </section >
+//     <section style={{display: 'flex',justifyContent: 'flex-start'}}>
+
+//       <a href={rovergit} target='_blank' className='myButton' >
+//             Unity Rover Github
+//       </a>
+      
+//       <a href={roverreport} target='_blank' className='myButton' >
+//            Rover Report
+//       </a>
+      
+
+//   </section>
+//   </div>
+
+// </div>
+// </>
+// );
+
+// }
+
+function NewEmbeddedProject(){
   var width = window.innerWidth;
   return (
   <>
 
-  <div className="container">
-  <div className="left-grid" style={{padding:0}} >
 
     <If condition ={width<500}>
       <Then>
-      <video src={mktvid} width="160vw" height="190vw" controls/> 
+      <hr></hr>
+      <video src={mktvid} width="230vw" height="260vw" controls/>
+      <h3 style={{color: "black", textAlign:'centre'}}>Opencare IOT-Smart Mask</h3>
+        <section style={{color:"black", fontSize:12, justifyContent:'left', textAlign: 'left'}}>
+          {embtext}
+
+          </section>
+        <section style={{display: 'flex',justifyContent: 'flex-start'}}>
+          
+        <a href="https://pmz7696.wixsite.com/opencare" target='_blank' className='myButton' style={{marginLeft:'0px', position:'relative'}} >
+                Product Website
+        </a>
+
+
+        </section>
 
 
       </Then>
       <Else>
-      <video src={mktvid} width="275px" height="280px" controls/> 
+      <div className="container">
+        <div className="left-grid" style={{padding:0}} >
+
+        <video src={mktvid} width="275px" height="280px" controls/> 
+        </div>
+        <div className="right-grid" style={{backgroundColor: 'rgba(245, 245, 220,0.911)', padding:'0 calc(var(--padding-percentage, 1.5%))'}}>
+          <h2 style={{color: "black", textAlign:'left',marginTop:'30px'}}>Opencare IOT-Smart Mask</h2>
+        <section style={{color:"black", fontSize:15, justifyContent:'left', textAlign: 'left'}}>
+          {embtext}
+
+          </section>
+        <section style={{display: 'flex',justifyContent: 'flex-start'}}>
+          
+        <a href="https://pmz7696.wixsite.com/opencare" target='_blank' className='myButton' style={{marginLeft:'0px', position:'relative'}} >
+                Product Website
+        </a>
+
+
+        </section>
+
+        </div>
+
+      </div>
+
 
       </Else>
     </If>
 
 
 
-
-  </div>
-  <div className="right-grid" style={{backgroundColor: 'rgba(245, 245, 220,0.911)', padding:'0 calc(var(--padding-percentage, 1.5%))'}}>
-    <h2 style={{color: "black", textAlign:'left',marginTop:'30px'}}>Opencare IOT-Smart Mask</h2>
-  <section style={{color:"black", fontSize:15, justifyContent:'left', textAlign: 'left'}}>
-    {embtext}
-
-    </section>
-    <section style={{display: 'flex',justifyContent: 'flex-start'}}>
-      
-    <a href="https://pmz7696.wixsite.com/opencare" target='_blank' className='myButton' style={{marginLeft:'0px', position:'relative'}} >
-            Product Website
-    </a>
-
-
-    </section>
-
-  </div>
-
-</div>
 </>
 );
 
 }
+
+
+
+
+// function EmbeddedProject(){
+//   var width = window.innerWidth;
+//   return (
+//   <>
+
+//   <div className="container">
+//   <div className="left-grid" style={{padding:0}} >
+
+//     <If condition ={width<500}>
+//       <Then>
+//       <video src={mktvid} width="160vw" height="190vw" controls/> 
+
+
+//       </Then>
+//       <Else>
+//       <video src={mktvid} width="275px" height="280px" controls/> 
+
+//       </Else>
+//     </If>
+
+
+
+
+//   </div>
+//   <div className="right-grid" style={{backgroundColor: 'rgba(245, 245, 220,0.911)', padding:'0 calc(var(--padding-percentage, 1.5%))'}}>
+//     <h2 style={{color: "black", textAlign:'left',marginTop:'30px'}}>Opencare IOT-Smart Mask</h2>
+//   <section style={{color:"black", fontSize:15, justifyContent:'left', textAlign: 'left'}}>
+//     {embtext}
+
+//     </section>
+//     <section style={{display: 'flex',justifyContent: 'flex-start'}}>
+      
+//     <a href="https://pmz7696.wixsite.com/opencare" target='_blank' className='myButton' style={{marginLeft:'0px', position:'relative'}} >
+//             Product Website
+//     </a>
+
+
+//     </section>
+
+//   </div>
+
+// </div>
+// </>
+// );
+
+// }
+
+function NewMLProject(){
+  var width = window.innerWidth;
+  return (
+  <>
+
+  <If condition ={width<500}>
+      <Then>
+        <hr></hr>
+      <img src={eploss} width="250vw" height="250vw" controls/> 
+      <h3 style={{color: "black", textAlign:'centre',marginTop:'30px'}}>Neural Network Coursework</h3>
+      <section style={{color:"black", fontSize:12, justifyContent:'left', textAlign: 'left'}}>
+        {mltext}
+
+        </section>
+        <section style={{display: 'flex',justifyContent: 'flex-start'}}>
+          
+        <a href="https://github.com/JamesOngICL/intro-ml-neural-net" target='_blank' className='myButton' >
+                Intro-ML Github
+          </a>
+          
+          <a href="https://drive.google.com/file/d/1MAk4LFoZgccna0AvaQTkW06Vd9pKjo1c/view?usp=sharing" target='_blank' className='myButton' >
+              Intro-ML Report
+          </a>
+          
+
+        </section>
+
+
+      </Then>
+      <Else>
+      <div className="container">
+      <div className="left-grid" style={{padding:0}} >
+
+      <img src={eploss} width="275px" height="280px" controls/> 
+      </div>
+      <div className="right-grid" style={{backgroundColor: 'rgba(245, 245, 220,0.911)', padding:'0 calc(var(--padding-percentage, 1.5%))'}}>
+        <h2 style={{color: "black", textAlign:'left',marginTop:'30px'}}>Neural Network Coursework</h2>
+      <section style={{color:"black", fontSize:15, justifyContent:'left', textAlign: 'left'}}>
+        {mltext}
+
+        </section>
+        <section style={{display: 'flex',justifyContent: 'flex-start'}}>
+          
+        <a href="https://github.com/JamesOngICL/intro-ml-neural-net" target='_blank' className='myButton' >
+                Intro-ML Github
+          </a>
+          
+          <a href="https://drive.google.com/file/d/1MAk4LFoZgccna0AvaQTkW06Vd9pKjo1c/view?usp=sharing" target='_blank' className='myButton' >
+              Intro-ML Report
+          </a>
+          
+
+        </section>
+
+      </div>
+
+    </div>
+
+
+      </Else>
+    </If>
+
+
+
+</>
+);
+
+}
+
+
 
 
 function MLProject(){

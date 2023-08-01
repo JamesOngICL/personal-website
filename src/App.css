@@ -51,6 +51,12 @@
   padding: calc(var(--padding-percentage, 1%));
   height:calc(var(--heigh-percentage,100%));
 }
+.invisible-line {
+  display: block;
+  height: 3.5px;
+  background-color: transparent;
+  border: none;
+}
 
 .right-grid {
   flex-grow: 1;
