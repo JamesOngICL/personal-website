@@ -26,7 +26,7 @@ function App() {
       <hr className="invisible-line" />
 
     <div id="wrapper">
-    <If condition ={width<600}>
+    <If condition ={width<800}>
       <Then>
         <NarrowGrid></NarrowGrid>
       </Then>
@@ -97,7 +97,7 @@ function NewProjectGrid(){
 
   return (
   <>
-  <If condition ={width<600}>
+  <If condition ={width<800}>
       <Then>
       {/* <video src={unityrover} width="160vw" height="190vw" controls/>  */}
       <hr></hr>
@@ -213,7 +213,7 @@ function NewEmbeddedProject(){
   <>
 
 
-    <If condition ={width<600}>
+    <If condition ={width<800}>
       <Then>
       <hr></hr>
       <video src={mktvid} width="230vw" height="260vw" poster={occonn} controls/>
@@ -324,7 +324,7 @@ function NewMLProject(){
   return (
   <>
 
-  <If condition ={width<600}>
+  <If condition ={width<800}>
       <Then>
         <hr></hr>
       <img src={eploss} width="250vw" height="250vw" controls/> 
@@ -398,7 +398,7 @@ function MLProject(){
 
   <div className="container">
   <div className="left-grid" style={{padding:0}} >
-  <If condition ={width<500}>
+  <If condition ={width<800}>
       <Then>
       <img src={eploss} width="160vw" height="190vw" controls/> 
 
