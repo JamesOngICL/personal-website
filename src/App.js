@@ -21,7 +21,7 @@ function App() {
       <ul style={{listStyleType: "none",display:"block",margin:"0",padding:"0",position:'fixed', top: "0",border: "1px solid #e7e7e7",backgroundColor:"navy"}}>
         <li style={{float: "left"}}><a href="#wrapper" className='anchorval'>Home</a></li>
         <li style={{float: "left"}}><a href="#projects" className='anchorval'>Projects</a></li>
-        <li style={{float: "left"}}><a href="https://tinyurl.com/3xkxp3my" className='anchorval' target='_blank'>Resume</a></li>
+        <li style={{float: "left"}}><a href="https://drive.google.com/file/d/1obeUWgY5YSSTDLthJSj-_yQe-nDIlZQ-/view?usp=sharing" className='anchorval' target='_blank'>Resume</a></li>
       </ul>
       <hr className="invisible-line" />
 
