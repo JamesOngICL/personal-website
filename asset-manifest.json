@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.bc87a7cf.css",
-    "main.js": "/personal-website/static/js/main.857cd7ba.js",
+    "main.js": "/personal-website/static/js/main.157b9cf2.js",
     "static/js/787.023edb23.chunk.js": "/personal-website/static/js/787.023edb23.chunk.js",
     "static/media/marketingvid.mp4": "/personal-website/static/media/marketingvid.db516115a06fc4e4674a.mp4",
     "static/media/unity-rover.mp4": "/personal-website/static/media/unity-rover.00cdc1850ac6c2e78097.mp4",
     "static/media/square-profile.jpg": "/personal-website/static/media/square-profile.a3fb7d6cc6572e5e680b.jpg",
-    "static/media/self-picture.JPG": "/personal-website/static/media/self-picture.95dbe2f4d16b60534797.JPG",
+    "static/media/south-africa-v1.jpg": "/personal-website/static/media/south-africa-v1.765a95d29de4394ac35f.jpg",
     "static/media/adamepvsloss.png": "/personal-website/static/media/adamepvsloss.ad5288c719ac4be8e06b.png",
     "static/media/thumbnailrover.jpg": "/personal-website/static/media/thumbnailrover.f56d134603cb1072f68a.jpg",
     "static/media/occonnectsample.jpg": "/personal-website/static/media/occonnectsample.c35c4fe395b2d5e96784.jpg",
     "static/media/logo.svg": "/personal-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/personal-website/index.html",
     "main.bc87a7cf.css.map": "/personal-website/static/css/main.bc87a7cf.css.map",
-    "main.857cd7ba.js.map": "/personal-website/static/js/main.857cd7ba.js.map",
+    "main.157b9cf2.js.map": "/personal-website/static/js/main.157b9cf2.js.map",
     "787.023edb23.chunk.js.map": "/personal-website/static/js/787.023edb23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bc87a7cf.css",
-    "static/js/main.857cd7ba.js"
+    "static/js/main.157b9cf2.js"
   ]
 }
