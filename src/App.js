@@ -2,7 +2,7 @@ import './App.css';
 
 import React from 'react';
 import logo from './logo.svg';
-import websitepic from './self-picture.JPG'
+import websitepic from './south-africa-v1.jpg'
 import unityrover from './unity-rover.mp4'
 import mktvid from './marketingvid.mp4'
 import eploss from './adamepvsloss.png'
@@ -142,11 +142,7 @@ function NewProjectGrid(){
                 <a href={rovergit} target='_blank' className='myButton' >
                       Unity Rover Github
                 </a>
-                
-                <a href={roverreport} target='_blank' className='myButton' >
-                    Rover Report
-                </a>
-                
+              
 
             </section>
 
@@ -448,7 +444,7 @@ export default App;
 const rovertext = "On this dynamic project, my team of seven and I developed a robot capable of autonomously navigating a maze while detecting and avoiding obstacles. I contributed by implementing a TCP-IP based Wi-Fi communication protocol, enabling an Arduino client to interface with front-end web displays at a sub-second latency.I also designed three+ databases to log exploration data and store backup coordinate information related to the mission. Rigorously stress-tested, these databases held 10k+ map coordinate entries, efficiently storing rover, obstacle, and orientation data.Since then, I've further honed my skills in robotics, mastering PID control for accurate navigation and Monte Carlo simulation for localizing a rover's position on a grid using particle representation. This  project earned first-class honors from my university and fuelled my interest in robotics 🤖."
 
 const rovergit = "https://github.com/JamesOngICL/Unity-Mars-Rover"
-const roverreport = "https://drive.google.com/file/d/17oxbTTPWYuWwJK3xg9Ecex6pJmTrc78l/view?usp=sharing"
+// const roverreport = "https://drive.google.com/file/d/17oxbTTPWYuWwJK3xg9Ecex6pJmTrc78l/view?usp=sharing"
 
 const embtext = "In this innovative project, my team of four and I developed a cutting-edge IoT smart-breathing mask prototype to monitor air quality and gather user health data. Designed with doctors and residents of polluted cities in mind, our reusable mask provides a sustainable solution for better breathing.Leveraging a 4x-threaded architecture and multithreading, I concurrently collected readings from 5+ sensors via I2C, sending the data to web servers for processing. Our mask's sensors measured heart rate, air temperature, acceleration, volatile organic components, and more—crucial metrics for healthcare professionals. I also implemented machine learning algorithms using decision trees to analyze acceleration and heart rate data, enabling user activity identification and step counting. Discover our marketing website and GitHub repository below, and watch our engaging prototype launch video on the right-hand side 🎥🔬🌐."
 
