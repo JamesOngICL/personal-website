@@ -21,7 +21,7 @@ function App() {
       <ul style={{listStyleType: "none",display:"block",margin:"0",padding:"0",position:'fixed', top: "0",border: "1px solid #e7e7e7",backgroundColor:"navy"}}>
         <li style={{float: "left"}}><a href="#wrapper" className='anchorval'>Home</a></li>
         <li style={{float: "left"}}><a href="#projects" className='anchorval'>Projects</a></li>
-        <li style={{float: "left"}}><a href="https://drive.google.com/file/d/1Ij9XY63oYwwRZqQRiMkbUiPEFAa5PehJ/view?usp=sharing" className='anchorval' target='_blank'>Resume</a></li>
+        <li style={{float: "left"}}><a href="https://docs.google.com/document/d/1z2LpGNGzEjIQl5O6DaPUucRNqESNq4xDnFYcl6eq67I/edit?usp=sharinghttps://drive.google.com/file/d/1Ij9XY63oYwwRZqQRiMkbUiPEFAa5PehJ/view?usp=sharing" className='anchorval' target='_blank'>Resume</a></li>
       </ul>
       <hr className="invisible-line" />
 
@@ -72,10 +72,13 @@ function Gridsection(){
     <h1 style={{color: "white", textAlign:'left'}}>James Ong</h1>
 
   <section style={{color: "white", fontSize:15, justifyContent:'left', textAlign: 'left' }}>
-  Hey, I'm James! 🚀 An Electronic and Information Engineering graduate from Imperial College London, currently pursuing a masters degree in {gradcourse} at {graduni}. With 3+ years of coding experience, I've honed my skills in C++, Python, and SQL having completed many embedded systems and robotics projects. 
-  I'm adept in PyTorch, Pandas, and Matplotlib for ML and data-science and  used HTML, JavaScript, and React for web-development (this website is programmed with react). Eager to innovate, my career aspirations spans Artificial Intelligence, IOT, Software and Financial Engineering among others.🖥️🌐
-  Discover more about my journey on my GitHub & LinkedIn profiles! Please don't hesitate to connect or drop me an email (found in my resume) for any questions, inquiries, or general advice. 🌟📧🔗
+  Hi I'm James, I'm from London and Singapore and at time of writing (January 2025) I've just completed my degree in Computer Engineering. I completed my undergraduate degree at Imperial College London and did my Master's at Cornell University. I'm set to start work as an Automation Engineer in San Francisco this February 🚀. 
 
+  During my spare time I really enjoy doing the following: 
+  🌍 Travel - I've visited 30 countries and lived across 4 cities in 4 years, 
+  🏋️ Going to the gym: I like to maintain a strong baseline fitness level.
+  
+  Additionally, recently I've picked up a few new hobbies and have been dabbling in wine-tasting, rock climbing, learning a new language, and photography. If you'd like to connect and take the chance to speak with me please feel free to reach out and find my email in the Resume section. 
 
     </section >
     <section style={{display: 'flex',justifyContent: 'flex-start'}}>
@@ -114,11 +117,7 @@ function NewProjectGrid(){
           <a href={rovergit} target='_blank' className='myButton' >
                 Unity Rover Github
           </a>
-          
-          <a href={roverreport} target='_blank' className='myButton' >
-              Rover Report
-          </a>
-          
+
 
       </section>
 
