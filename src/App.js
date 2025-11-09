@@ -71,16 +71,20 @@ function Gridsection(){
     <div className="right-grid">
     <h1 style={{color: "white", textAlign:'left'}}>James Ong</h1>
 
-  <section style={{color: "white", fontSize:15, justifyContent:'left', textAlign: 'left' }}>
-  Hi I'm James, I'm from London and Singapore and at time of writing (January 2025) I've just completed my degree in Computer Engineering. I completed my undergraduate degree at Imperial College London and did my Master's at Cornell University. I'm set to start work as an Automation Engineer in San Francisco this February 🚀. 
-
-  During my spare time I really enjoy doing the following: 
-  🌍 Travel - I've visited 30 countries and lived across 4 cities in 4 years, 
-  🏋️ Going to the gym: I like to maintain a strong baseline fitness level.
-  
-  Additionally, recently I've picked up a few new hobbies and have been dabbling in wine-tasting, rock climbing, learning a new language, and photography. If you'd like to connect and take the chance to speak with me please feel free to reach out and find my email in the Resume section. 
-
-    </section >
+        <section style={{ color: "white", fontSize: 16, textAlign: "left", margin: 0 }}>
+            <p>
+              Hi, I'm James 👋 — a Software Engineer at Samsara in San Francisco.
+            </p>
+            <p>
+              I work on automation and hardware validation frameworks that test IoT devices at scale — 
+              from simulating GPS and real-world driving conditions to automating regression tests and data reporting. 
+              My day-to-day involves building CI/CD tools, backend services, and internal web integrations that make large-scale device testing reliable and efficient.
+            </p>
+            <p>
+              I graduated from Cornell University (M.Eng. ECE) and Imperial College London (B.Eng. EIE). 
+              Outside of work, I enjoy running, playing tennis, and traveling. I'm always happy to connect or chat about new ideas, feel free to reach out!
+            </p>
+        </section>
     <section style={{display: 'flex',justifyContent: 'flex-start'}}>
         <a href="https://github.com/JamesOngICL" target='_blank' className='myButton' >
             Github
